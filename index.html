@@ -1,84 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Bootstrap 4</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-
-    <style>
-        .my-custom-row{
-            background-color: bisque;
-            height: 400px;
-        }
-    </style>
-    <div class="container"><!-- .container-->
-        <div class="row">
-            <div class="col">Col One</div> <!-- Cada col agafa el mateix % del container, utilitza flexbox y grids i coses per darrera -->
-            <div class="col">Col Two</div>
-        </div>  <!-- .row-->
-        Hello World
-    </div> 
-
-    <div class="container-fluid"> <!-- Quan vols que el layout sigui full width -->
-        Hi Mark
-    </div>
-    <!-- Responsive rows: sm= mobils, md=tablets lg=desktop -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 col-md-6 col-lg-2">small col one</div> <!-- En teoría només hi ha 12 col en small?-->
-            <div class="col-sm-8 col-md-6 col-lg-8" >small col two</div> <!-- Fa les rows responsive, explorar amb el F12->Elements->Al codi "flex" -->
-            <!-- no tenen perque sumar 12-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Casa Rural Cal Dalfó</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Casa Rural Cal Dalfó</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Inici</a></li>
+                <li class="sidebar-nav-item"><a href="#about">Informació</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Serveis</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Espais</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contacte</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1 text-white">Casa Rural Cal Dalfó</h1>
+                <h3 class="mb-5 text-white"><em>Viu l'experiència rural!</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Més informació</a>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Casa Rural Cal Dalfó és el lloc on passar el cap de setmana!</h2>
+                        <p class="lead mb-5">
+                            Un espai únic tant per desconnectar com per celebrar. 
+                        </p>
+                        <a class="btn btn-dark btn-xl" href="#services">Que oferim?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Serveis</h3>
+                    <h2 class="mb-5">Que oferim?</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-globe-alt"></i></span>
+                        <h4><strong>L'experiència</strong></h4>
+                        <p class="text-faded mb-0">Viu la Rural full-experience,connecta amb la natura</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-location-pin"></i></span>
+                        <h4><strong>L'espai</strong></h4>
+                        <p class="text-faded mb-0">Per celebrar els teus moments inoblidables</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4><strong>Tracte familiar</strong></h4>
+                        <p class="text-faded mb-0">
+                            Et sentirás com a casa.
+                            <i class="fas fa-heart"></i>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-wallet"></i></span>
+                        <h4><strong>Preu irresistible</strong></h4>
+                        <p class="text-faded mb-0">No et costará massa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Callout>
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-5">
+                    Welcome to
+                    <em>your</em>
+                    next website!
+                </h2>
+                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
+            </div>
+        </section-->
+        <!-- Portfolio-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <!--h3 class="text-secondary mb-0">Portfolio</h3-->
+                    <h2 class="mb-5">Els nostres espais:</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Sala de festes</div>
+                                    <p class="mb-0">Un gran espai on celebrar festes, sopars, aniversaris...</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Espai exterior</div>
+                                    <p class="mb-0">Ideal per grups nombrosos y activitats al aire lliure.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Zona animals</div>
+                                    <p class="mb-0">Perquè no hauries de voler saludar al Nepturno i veure als galls peruans?</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">La casa rural</div>
+                                    <p class="mb-0">Una acollidora casa rural equipada amb tot el que necessites per desconnectar un cap de setmana!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action>
+        <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+            </div-->
+        </section>
+        <!-- Map-->
+        <div class="map" id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.6840343575914!2d0.5045961514201421!3d41.8135665773266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a702f91275d34b%3A0x6a215940130a8091!2sCasa%20Rural%20Cal%20Dalfo!5e0!3m2!1ses!2ses!4v1679340062285!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br />
+            <small><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.6840343575914!2d0.5045961514201421!3d41.8135665773266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a702f91275d34b%3A0x6a215940130a8091!2sCasa%20Rural%20Cal%20Dalfo!5e0!3m2!1ses!2ses!4v1679340062285!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""></a></small>
         </div>
-    <!-- si vols canviar la columna 1 per la 2 en medium screens-->
-        <div class="row">
-            <div class="col-sm-2 order-md-2">Mitjanes 2</div> <!-- En pantalles mitjanes és la segona -->
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4 offset-2">Offset 1</div>
-            <div class="col-sm-4 offset-1">Offset 2</div>
-        </div>
-
-        <!-- Alinear coses, realment similar a flexbox amb el justify content i tal-->
-        <div class="row my-custom-row justify-content-center align-items-center"> <!---default end start --><!-- Per utilitzar el teu propi css i alinear div al centre de la pàgina (ample) i despres al centre del div (altura)-->
-            <div class="col-sm-4"><div class="p-3 bprder bg-light"> Cool One</div></div>
-            <div class="col-sm-4"><div class="p-3 bprder bg-light"> Cool Two</div></div>
-            <!-- justify-content-around = amb -->
-            <!-- justify-content-between = amb -->
-            <!-- justify-content-evenly = amb -->
-            <!-- align-items-default -->
-            <!-- align-items-end -->
-            <!-- align-items-start -->
-        </div>
-
-        <div class="row my-custom-row justify-content-center align-items-center gx-5"> <!-- que fa el gx?-->
-            <div class="col-sm-4"><div class="p-3 bprder bg-light"> Cool One</div></div>
-            <div class="col-sm-4"><div class="p-3 bprder bg-light"> Cool Two</div></div>
-            <!-- justify-content-around = amb -->
-            <!-- justify-content-between = amb -->
-            <!-- justify-content-evenly = amb -->
-            <!-- align-items-default -->
-            <!-- align-items-end -->
-            <!-- align-items-start -->
-        </div>
-
-        <!-- Mirar la docu i mirar components-->
-        <div class="row">
-            <div class="col"><button type="button" class="btn btn-primary">Primary</button></div>
-            <div class="col"><button type="button" class="btn btn-secondary">Secondary</button></div>
-            <div class="col"><button type="button" class="btn btn-danger">Danger</button></div>
-            <div class="col"><button type="button" class="btn btn-warning">Warning</button></div>
-        </div>
-
-        <!-- que passe si volem utilitzar un component que utilitza js?-->
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/casaruralcaldalfo/?locale=es_ES"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://www.instagram.com/casarural_caldalfo/"><i class="icon-social-instagram"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Casa Rural Dalfó 2023</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
