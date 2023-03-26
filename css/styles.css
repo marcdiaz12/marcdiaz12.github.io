@@ -11421,14 +11421,14 @@ html {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .callout h2, .callout .h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 450;
   display: block;
   max-width: 30rem;
 }
